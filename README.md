@@ -2,10 +2,16 @@
 
 Spring Boot와 JPA 기반의 API 설계부터 성능 개선까지, 서비스 흐름 안에서 직접 검증하며 구현하는 신입 백엔드 개발자입니다.
 
+<p align="center">
+  <a href="https://s4ngg.github.io">
+    <img src="https://img.shields.io/badge/🌐_전체_포트폴리오_보러가기-000000?style=for-the-badge" alt="포트폴리오 바로가기" />
+  </a>
+</p>
+
 - 🔭 최근에는 로스트아크 AI 에이전트 플랫폼 **[Lojipsa](https://github.com/s4ngg/Lojipsa)**를 혼자 기획 · 개발 · 배포 · 운영하고 있습니다.
 - 🤖 AI를 "그럴듯한 답변 생성기"가 아니라 **검증 가능한 근거 안에서만 답하게 설계**하는 데 관심이 많습니다.
 - 🌱 팀 프로젝트에서는 요구사항을 도메인으로 분해하고, 문제가 생기면 증상이 아니라 원인을 끝까지 확인하는 걸 중요하게 생각합니다.
-- 📫 s4ngg@naver.com · [포트폴리오](https://s4ngg-portfolio-main.vercel.app)
+- 📫 s4ngg@naver.com · [포트폴리오](https://s4ngg.github.io)
 
 #### 프로젝트
 
