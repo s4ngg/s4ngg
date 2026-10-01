@@ -1,40 +1,36 @@
-### 안녕하세요, 백엔드 개발자 김상우입니다 👋
+### 김상우 — 백엔드 개발자
 
-Spring Boot와 JPA 기반의 API 설계부터 성능 개선까지, 서비스 흐름 안에서 직접 검증하며 구현하는 신입 백엔드 개발자입니다.
+Spring Boot로 API를 만들고, 그게 실제로 맞게 동작하는지 로그와 PR 기록으로 직접 확인하는 걸 기준으로 삼습니다. AI 코딩 도구를 쓸 때도 "그럴듯한 코드"가 아니라 "실제로 맞는 코드"인지를 PR 단위로 추적해서 검증합니다.
 
-<p align="center">
-  <a href="https://s4ngg.github.io">
-    <img src="https://img.shields.io/badge/🌐_전체_포트폴리오_보러가기-000000?style=for-the-badge" alt="포트폴리오 바로가기" />
-  </a>
-</p>
-
-- 🔭 최근에는 로스트아크 AI 에이전트 플랫폼 **[Lojipsa](https://github.com/s4ngg/Lojipsa)**를 혼자 기획 · 개발 · 배포 · 운영하고 있습니다.
-- 🤖 AI를 "그럴듯한 답변 생성기"가 아니라 **검증 가능한 근거 안에서만 답하게 설계**하는 데 관심이 많습니다. Lojipsa의 피드백 에이전트는 매일 자동으로 핵심 기능을 실행하고, 그 결과를 다시 다른 LLM 호출로 채점(LLM-as-judge)해서 운영 품질을 스스로 점검합니다.
-- ⚙️ 이 GitHub 프로필과 포트폴리오 배포(Vercel + GitHub Pages 이중 배포)도 AI 코딩 도구로 자동화해서 관리합니다 — AI를 결과물에만 쓰는 게 아니라 개발 워크플로 자체에 녹이는 걸 지향합니다.
-- 🌱 팀 프로젝트에서는 요구사항을 도메인으로 분해하고, 문제가 생기면 증상이 아니라 원인을 끝까지 확인하는 걸 중요하게 생각합니다.
-- 📫 s4ngg@naver.com · [포트폴리오](https://s4ngg.github.io)
+**지금 하고 있는 일** — [Lojipsa](https://github.com/s4ngg/Lojipsa) 공개 홈을 막 배포했고, 다음은 모바일 폭(375px)에서 사이드바가 전혀 접히지 않는 반응형 이슈를 고치는 중입니다.
 
 #### 프로젝트
 
 | | |
 |---|---|
-| 🎮 **[Lojipsa](https://github.com/s4ngg/Lojipsa)** | 로스트아크 AI 에이전트 플랫폼 · 개인 프로젝트 (기획·백엔드·프론트·인프라·운영 전체) · Spring Boot + Next.js |
-| 🛍️ **[AllPick](https://github.com/s4ngg/AP-Spring)** | 역할 기반 쇼핑몰 서비스 · 팀장/풀스택 · 팀 프로젝트 6인 |
-| 🎲 **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)** | 롤토체스 전적 검색 서비스 · 팀장/풀스택 · 팀 프로젝트 4인 |
-| 🤝 **[portfolio-agent](https://github.com/s4ngg/portfolio-agent)** | 포트폴리오 RAG AI 챗봇 · 개인 프로젝트 |
+| **[Lojipsa](https://github.com/s4ngg/Lojipsa)** · 로스트아크 AI 에이전트 플랫폼, 1인 기획·개발·배포·운영 | 피드백 에이전트가 매일 자체 품질을 LLM-as-judge로 채점하도록 설계했고, 이 방식으로 실제 버그 2건을 찾았습니다. |
+| **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)** · 롤토체스 전적 검색 서비스, 팀장/풀스택 4인 | 병합된 PR 120건을 GitHub API로 직접 감사해서 96%에 Claude Code 흔적, 79%에 실제 사람 리뷰가 있었음을 확인했습니다. |
+| **[AllPick](https://github.com/s4ngg/AP-Spring)** · 역할 기반 쇼핑몰 서비스, 팀장/풀스택 6인 | N+1 쿼리를 480ms → 5.8ms로 줄였습니다. AI 도구 도입 이전 프로젝트라 전 과정을 직접 구현했습니다. |
+| **[portfolio-agent](https://github.com/s4ngg/portfolio-agent)** · 포트폴리오 RAG 챗봇, 1인 사이드 프로젝트 | 포트폴리오 방문자 질문에 실제 프로젝트 문서 기반으로만 답하도록 제한한 RAG 파이프라인입니다. |
 
 #### 기술 스택
 
+지금 주로 쓰는 것
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+
+팀 프로젝트에서 써본 것
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+<img src="https://github-readme-stats.vercel.app/api?username=s4ngg&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="s4ngg's GitHub stats" height="165" />
+
+📫 s4ngg@naver.com · 전체 프로젝트와 PR 기록은 **[s4ngg.github.io](https://s4ngg.github.io)**에서 확인할 수 있습니다.
