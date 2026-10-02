@@ -9,8 +9,8 @@ Spring Boot로 API를 만들고, 그게 실제로 맞게 동작하는지 로그�
 | | |
 |---|---|
 | **[Lojipsa](https://github.com/s4ngg/Lojipsa)** · 로스트아크 AI 에이전트 플랫폼, 1인 기획·개발·배포·운영 | 피드백 에이전트가 매일 자체 품질을 LLM-as-judge로 채점하도록 설계했고, 이 방식으로 실제 버그 2건을 찾았습니다. |
-| **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)** · 롤토체스 전적 검색 서비스, 팀장/풀스택 4인 | 병합된 PR 120건을 GitHub API로 직접 감사해서 96%에 Claude Code 흔적, 79%에 실제 사람 리뷰가 있었음을 확인했습니다. |
-| **[AllPick](https://github.com/s4ngg/AP-Spring)** · 역할 기반 쇼핑몰 서비스, 팀장/풀스택 6인 | N+1 쿼리를 480ms → 5.8ms로 줄였습니다. AI 도구 도입 이전 프로젝트라 전 과정을 직접 구현했습니다. |
+| **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)** · 롤토체스 전적 검색 서비스, 팀장/풀스택 4인 | 병합된 PR 120건을 GitHub API로 직접 감사해서 96%에 Claude Code 흔적, 79%에 실제 사람 리뷰가 있었음을 확인했습니다. 덱 조회 N+1은 JMeter(50명·5분·3회)로 평균 480ms → 5.8ms까지 줄였습니다. |
+| **[AllPick](https://github.com/s4ngg/AP-Spring)** · 역할 기반 쇼핑몰 서비스, 팀장/풀스택 6인 | AI 도구 도입 이전 프로젝트라 전 과정을 직접 구현했습니다. |
 | **[portfolio-agent](https://github.com/s4ngg/portfolio-agent)** · 포트폴리오 RAG 챗봇, 1인 사이드 프로젝트 | 포트폴리오 방문자 질문에 실제 프로젝트 문서 기반으로만 답하도록 제한한 RAG 파이프라인입니다. |
 
 #### 기술 스택
