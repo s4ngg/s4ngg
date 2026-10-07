@@ -4,25 +4,12 @@ Spring Boot로 API를 만들고, 그게 실제로 맞게 동작하는지 로그�
 
 #### 프로젝트
 
-**[Lojipsa](https://github.com/s4ngg/Lojipsa)** · 로스트아크 AI 에이전트 서비스 · 1인 기획·개발·배포·운영
-- 스케줄러로 동작하는 Slack 알림 에이전트 3종, 관리자가 편집한 배경지식을 주입해 모델이 최신 정보를 추측하지 않게 한 Claude 요약·추천
-- 핵심 LLM 기능을 매일 합성 시나리오로 실행하고 Claude가 다시 PASS/FAIL로 채점하는 피드백 에이전트 — 이 방식으로 실제 버그 2건 발견(응답 첫 블록이 답변이 아닐 때의 NPE, 채점 실패를 정상으로 보고하던 문제)
-- 시세 API에 데이터 성격별 TTL 캐시(재료 5분·보석 1분) 적용, **운영 서버** JMeter(1스레드·120초·3회) 평균 응답 207ms → 18ms, 436ms → 37ms
-- 1GB EC2에서 Docker 빌드 중 서버가 응답 불능이 된 사고를 겪고, 로컬 빌드 후 결과물만 올리는 방식으로 배포 절차를 바꿔 문서화
-
-**[TFT-gogo](https://github.com/s4ngg/TFT-gogo)** · 롤토체스 전적 검색 서비스 · 팀장/풀스택 4인
-- 병합된 PR 120건을 GitHub API로 직접 감사해 96%에 Claude Code 흔적, 79%에 사람 리뷰가 있었음을 확인
-- 메타덱 조회 N+1을 쿼리 로그로 찾아 JMeter(50명·5분·3회, 로컬)로 평균 480ms → 5.8ms
-- AI 추천 API에서 DB 조회와 외부 AI 호출이 한 트랜잭션에 묶여 커넥션이 오래 점유되던 문제를 트랜잭션 범위 재설계로 평균 429ms → 355ms
-- OpenAI 임베딩 + pgvector 유사도 기반 하이브리드 추천, 검색 실패 시 circuit breaker로 기존 방식 폴백
-
-**[AllPick](https://github.com/s4ngg/AP-Spring)** · 역할 기반 쇼핑몰 서비스 · 팀장/풀스택 6인
-- 쿠폰·멤버십 설계, 쿠폰 정책 변경이 주문 코드에 번지던 문제를 계기로 회원·상품·주문·쿠폰 도메인 분리와 공통 예외 응답 적용
-- Spring Security + JWT 역할별(회원/판매자/관리자) 권한 분리, Toss 결제부터 환불까지 상태 추적
-- AI 상품 추천 서버([AP-FastAPI](https://github.com/s4ngg/AP-FastAPI))를 FastAPI로 단독 개발해 백엔드와 연동, GitHub Actions로 배포 자동화
-
-**[portfolio-agent](https://github.com/s4ngg/portfolio-agent)** · 포트폴리오 RAG 챗봇 · 1인 사이드 프로젝트
-- 방문자 질문에 실제 프로젝트 문서만 근거로 답하도록 제한한 RAG 파이프라인
+| 프로젝트 | 역할 | 핵심 |
+|---|---|---|
+| **[Lojipsa](https://github.com/s4ngg/Lojipsa)**<br>로스트아크 AI 에이전트 서비스 | 1인 기획·개발·배포·운영 | 매일 자동 실행되는 LLM-as-judge 피드백 에이전트로 실제 버그 2건 발견<br>시세 API TTL 캐시, **운영 서버** JMeter 평균 207ms → 18ms · 436ms → 37ms<br>1GB EC2 배포 사고 후 로컬 빌드·업로드 방식으로 절차 변경 |
+| **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)**<br>롤토체스 전적 검색 서비스 | 팀장 · 풀스택 4인 | 병합 PR 120건 감사: 96% Claude Code 흔적, 79% 사람 리뷰<br>N+1 개선 480ms → 5.8ms (JMeter 50명·5분·3회, 로컬)<br>외부 AI 호출이 묶인 트랜잭션 재설계 429ms → 355ms, pgvector 추천 + 폴백 |
+| **[AllPick](https://github.com/s4ngg/AP-Spring)**<br>역할 기반 쇼핑몰 서비스 | 팀장 · 풀스택 6인 | 쿠폰·멤버십 설계, 도메인 분리와 공통 예외 응답, JWT 역할별 권한<br>AI 추천 서버([AP-FastAPI](https://github.com/s4ngg/AP-FastAPI)) 단독 개발·연동, GitHub Actions 배포 |
+| **[portfolio-agent](https://github.com/s4ngg/portfolio-agent)**<br>포트폴리오 RAG 챗봇 | 1인 사이드 프로젝트 | 실제 프로젝트 문서만 근거로 답하도록 제한한 RAG 파이프라인 |
 
 #### 기술 스택
 
