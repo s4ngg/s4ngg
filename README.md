@@ -1,8 +1,7 @@
-<h1 align="center">김상우</h1>
+<a href="https://s4ngg.github.io"><img src="hero.png" alt="김상우 · 백엔드 신입 개발자 — 포트폴리오 보기" width="100%"/></a>
 
 <p align="center">
-  <b>백엔드 개발자</b> · Java / Spring Boot<br/>
-  <sub>만든 것이 실제로 맞게 동작하는지, 로그와 수치로 직접 확인합니다.</sub>
+  <a href="https://s4ngg.github.io"><img src="https://img.shields.io/badge/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%EC%9E%90%EC%84%B8%ED%9E%88_%EB%B3%B4%EA%B8%B0-%E2%86%92-1155CC?style=for-the-badge" alt="포트폴리오 자세히 보기"/></a>
 </p>
 
 <table align="center">
