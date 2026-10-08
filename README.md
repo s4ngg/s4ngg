@@ -28,7 +28,6 @@
 | **[Lojipsa](https://github.com/s4ngg/Lojipsa)**<br/><sub>로스트아크 AI 에이전트 서비스<br/>1인 기획·개발·배포·운영</sub> | Claude 요약·추천에 관리자가 편집하는 배경지식을 주입하고, 핵심 LLM 기능을 매일 채점하는 피드백 에이전트로 품질을 점검합니다.<br/>1GB 서버 배포 사고를 겪은 뒤 로컬 빌드·업로드 방식으로 절차를 바꿨습니다. | [운영 서버 실측<br/>(207→18ms, 436→37ms)](https://s4ngg.github.io/performance.html) |
 | **[TFT-gogo](https://github.com/s4ngg/TFT-gogo)**<br/><sub>롤토체스 전적 검색 서비스<br/>팀장 · 풀스택 4인</sub> | 쿼리 로그로 N+1을 찾아 조회를 재설계했고, 외부 AI 호출이 묶인 트랜잭션을 나눠 응답을 429 → 355ms로 줄였습니다.<br/>pgvector 유사도 추천에 circuit breaker 폴백을 두었습니다. | [JMeter 50명·5분·3회<br/>(로컬 측정)](https://s4ngg.github.io/performance.html) |
 | **[AllPick](https://github.com/s4ngg/AP-Spring)**<br/><sub>역할 기반 쇼핑몰 서비스<br/>팀장 · 풀스택 6인</sub> | 쿠폰·멤버십을 설계하고 도메인 분리와 공통 예외 응답을 정했습니다. JWT 역할별 권한과 결제 상태 추적을 구현했고, AI 추천 서버([AP-FastAPI](https://github.com/s4ngg/AP-FastAPI))는 단독으로 개발해 연동했습니다. | 백엔드 병합 PR 44건<br/>(저장소 109건 중) |
-| **[portfolio-agent](https://github.com/s4ngg/portfolio-agent)**<br/><sub>포트폴리오 RAG 챗봇<br/>1인 사이드 프로젝트</sub> | 방문자 질문에 실제 프로젝트 문서만 근거로 답하도록 제한한 RAG 파이프라인입니다. | — |
 
 ### 기술 스택
 
